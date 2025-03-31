@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Culture Connect</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="{{ url_for('static', filename='logo.png') }}" alt="Culture Connect Logo">
+    </div>
+    <div class="title">
+      <h1>Culture Connect</h1>
+      <p>Uniting the world through cultural diversity</p>
+    </div>
+    <nav class="nav-buttons">
+      <a href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('contact') }}">Contact Us</a>
+      <a href="{{ url_for('signin') }}" class="signin-btn">Sign In</a>
+    </nav>
+  </header>
+  <main>
+    <section class="about-container">
+      <h2>About Us</h2>
+      <p>
+        Welcome to <strong>Culture Connect</strong>, a platform dedicated to preserving and celebrating 
+        the unique cultural heritage of communities across the globe. Through interactive features and 
+        engaging stories, we aim to foster a deeper understanding of our diverse world and the traditions 
+        that make each region special.
+      </p>
+      <p>
+        Our mission is to:
+      </p>
+      <ul>
+        <li>Promote awareness and appreciation of cultural diversity.</li>
+        <li>Provide a space for communities to share their stories and traditions.</li>
+        <li>Connect people with shared interests in cultural heritage.</li>
+        <li>Encourage education through interactive resources and visual storytelling.</li>
+      </ul>
+      <p>
+        At Culture Connect, we believe that learning about our shared heritage can inspire unity and mutual 
+        respect in an increasingly interconnected world.
+      </p>
+    </section>
+    <section class="vision-container">
+      <h3>Our Vision</h3>
+      <p>
+        Our vision is a world where cultural diversity is celebrated as a source of strength and inspiration. 
+        By offering a platform that bridges gaps between cultures, we aim to build a community where stories 
+        and traditions are cherished and preserved for generations to come.
+      </p>
+    </section>
+    <section class="team-container">
+      <h3>Meet the Team</h3>
+      <p>
+        Culture Connect is brought to you by a passionate team of storytellers, designers, and developers who 
+        are dedicated to creating an engaging and accessible platform for everyone.
+      </p>
+      <div class="team-images">
+        <img src="{{ url_for('static', filename='member1.jpg') }}" alt="Team Member 1">
+        <img src="{{ url_for('static', filename='member2.jpg') }}" alt="Team Member 2">
+        <img src="{{ url_for('static', filename='member3.jpg') }}" alt="Team Member 3">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; {{ year }} Culture Connect. All rights reserved.</p>
+  </footer>
+</body>
+</html>

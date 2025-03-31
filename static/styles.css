@@ -1,0 +1,121 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header .title h1 {
+    margin: 0;
+}
+
+header .title p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+header .nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+header .nav-buttons a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+header .nav-buttons a:hover {
+    background-color: #555;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    background-color: white;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* About, Contact, Country Page */
+.about-container, .contact-container, .country-container {
+    text-align: center;
+}
+
+.country-details img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wikipedia-link {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.wikipedia-link:hover {
+    text-decoration: underline;
+}
+
+.contact-container form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-container .form-group {
+    margin-bottom: 15px;
+}
+
+.contact-container label {
+    font-weight: bold;
+}
+
+.contact-container input, .contact-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-container button.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-container button.submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Map Image */
+.map-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.map-image {
+    max-width: 100%;
+    height: auto;
+}
